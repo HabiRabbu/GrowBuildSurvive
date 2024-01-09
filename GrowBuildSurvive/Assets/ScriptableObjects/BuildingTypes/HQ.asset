@@ -9,15 +9,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba868d79999c97e44b4bf87aca443d70, type: 3}
+  m_Script: {fileID: 11500000, guid: e87efacece31d4a48b8966ef9aa0afc8, type: 3}
   m_Name: HQ
   m_EditorClassIdentifier: 
   nameString: HQ
-  prefab: {fileID: 2259928892925930072, guid: 6e06ca984c0bdcc438e4d4f826d3f973, type: 3}
+  prefab: {fileID: 453496587237905750, guid: c00928966c9e55a4191c110b69c6d4f2, type: 3}
+  hasResourceGeneratorData: 1
   resourceGeneratorData:
     timerMax: 1
-    resourceType: {fileID: 11400000, guid: 26bddb6b966004346907218edf8f5274, type: 2}
+    resourceType: {fileID: 11400000, guid: 55700961c53eafa429d5be95f146e90f, type: 2}
     resourceDetectionRadius: 7
     maxResourceAmount: 7
   sprite: {fileID: 21300000, guid: 7030b8e3eb49e8440ae8eb3ec8b45d05, type: 3}
   minConstructionRadius: 0
+  constructionResourceCostArray: []
+  healthAmountMax: 150
+  constructionTimerMax: 5

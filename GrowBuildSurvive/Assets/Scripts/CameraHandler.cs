@@ -3,28 +3,61 @@ using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
 
-public class CameraHandler : MonoBehaviour
-{
+public class CameraHandler : MonoBehaviour {
+
+    public static CameraHandler Instance { get; private set; }
+
+
 
     [SerializeField] private CinemachineVirtualCamera cinemachineVirtualCamera;
 
     private float orthographicSize;
     private float targetOrthographicSize;
+    private bool edgeScrolling;
 
-    private void Start()
-    {
+    private void Awake() {
+        Instance = this;
+
+        edgeScrolling = PlayerPrefs.GetInt("edgeScrolling", 1) == 1;
+    }
+
+    private void Start() {
         orthographicSize = cinemachineVirtualCamera.m_Lens.OrthographicSize;
         targetOrthographicSize = orthographicSize;
     }
 
-    void Update()
-    {
+    private void Update() {
         HandleMovement();
         HandleZoom();
     }
 
-    private void HandleZoom()
-    {
+    private void HandleMovement() {
+        float x = Input.GetAxisRaw("Horizontal");
+        float y = Input.GetAxisRaw("Vertical");
+
+        if (edgeScrolling) {
+            float edgeScrollingSize = 30;
+            if (Input.mousePosition.x > Screen.width - edgeScrollingSize) {
+                x = +1f;
+            }
+            if (Input.mousePosition.x < edgeScrollingSize) {
+                x = -1f;
+            }
+            if (Input.mousePosition.y > Screen.height - edgeScrollingSize) {
+                y = +1f;
+            }
+            if (Input.mousePosition.y < edgeScrollingSize) {
+                y = -1f;
+            }
+        }
+
+        Vector3 moveDir = new Vector3(x, y).normalized;
+        float moveSpeed = 30f;
+
+        transform.position += moveDir * moveSpeed * Time.deltaTime;
+    }
+
+    private void HandleZoom() {
         float zoomAmount = 2f;
         targetOrthographicSize += -Input.mouseScrollDelta.y * zoomAmount;
 
@@ -38,14 +71,13 @@ public class CameraHandler : MonoBehaviour
         cinemachineVirtualCamera.m_Lens.OrthographicSize = orthographicSize;
     }
 
-    private void HandleMovement()
-    {
-        float x = Input.GetAxisRaw("Horizontal");
-        float y = Input.GetAxisRaw("Vertical");
-
-        Vector3 moveDir = new Vector3(x, y).normalized;
-        float moveSpeed = 30f;
-
-        transform.position += moveDir * moveSpeed * Time.deltaTime;
+    public void SetEdgeScrolling(bool edgeScrolling) {
+        this.edgeScrolling = edgeScrolling;
+        PlayerPrefs.SetInt("edgeScrolling", edgeScrolling ? 1 : 0);
     }
+
+    public bool GetEdgeScrolling() {
+        return edgeScrolling;
+    }
+
 }

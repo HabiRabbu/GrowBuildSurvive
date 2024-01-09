@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class ResourceAmount
-{
+public class ResourceAmount {
 
     public ResourceTypeSO resourceType;
     public int amount;
+
 }

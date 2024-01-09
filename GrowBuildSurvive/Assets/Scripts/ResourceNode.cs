@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ResourceNode : MonoBehaviour
-{
+public class ResourceNode : MonoBehaviour {
 
     public ResourceTypeSO resourceType;
+
 }

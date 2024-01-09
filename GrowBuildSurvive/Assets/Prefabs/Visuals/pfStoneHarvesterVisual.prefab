@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1392341027367546768}
   - component: {fileID: 37968433523872393}
+  - component: {fileID: 4459401923982650886}
   m_Layer: 0
   m_Name: Stone_rock
   m_TagString: Untagged
@@ -81,6 +82,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &4459401923982650886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270287980988053169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2df91be42b43f974d9ae6e475efeebbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  runOnce: 1
+  positionOffsetY: -5
 --- !u!1 &2137454385467768056
 GameObject:
   m_ObjectHideFlags: 0
@@ -91,6 +106,7 @@ GameObject:
   m_Component:
   - component: {fileID: 736586072103725439}
   - component: {fileID: 2613710505482054887}
+  - component: {fileID: 4446632954371550287}
   m_Layer: 0
   m_Name: sprite
   m_TagString: Untagged
@@ -162,6 +178,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &4446632954371550287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2137454385467768056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2df91be42b43f974d9ae6e475efeebbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  runOnce: 1
+  positionOffsetY: -3
 --- !u!1 &2892554008395358508
 GameObject:
   m_ObjectHideFlags: 0
@@ -172,6 +202,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4996956211010932937}
   - component: {fileID: 6919304873034879730}
+  - component: {fileID: 4646026444115086264}
   m_Layer: 0
   m_Name: Pickaxe
   m_TagString: Untagged
@@ -243,6 +274,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &4646026444115086264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2892554008395358508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2df91be42b43f974d9ae6e475efeebbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  runOnce: 1
+  positionOffsetY: -5
 --- !u!1 &4166171909411414931
 GameObject:
   m_ObjectHideFlags: 0
@@ -5029,7 +5074,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 382055491
+  m_SortingLayerID: 2004598429
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_RenderMode: 0
@@ -5122,6 +5167,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6788639967008007283}
   - component: {fileID: 179144278667718551}
+  - component: {fileID: 6080359581112972997}
   m_Layer: 0
   m_Name: Stone_rock (2)
   m_TagString: Untagged
@@ -5193,6 +5239,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6080359581112972997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6690787927086421715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2df91be42b43f974d9ae6e475efeebbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  runOnce: 1
+  positionOffsetY: -5
 --- !u!1 &7346741521225020205
 GameObject:
   m_ObjectHideFlags: 0
@@ -5203,6 +5263,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2279843789937224314}
   - component: {fileID: 5283455063841553407}
+  - component: {fileID: 3458772680024578102}
   m_Layer: 0
   m_Name: Pickaxe_2
   m_TagString: Untagged
@@ -5274,6 +5335,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &3458772680024578102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7346741521225020205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2df91be42b43f974d9ae6e475efeebbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  runOnce: 1
+  positionOffsetY: -5
 --- !u!1 &7483812125931111611
 GameObject:
   m_ObjectHideFlags: 0
@@ -10060,7 +10135,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 382055491
+  m_SortingLayerID: 2004598429
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_RenderMode: 0

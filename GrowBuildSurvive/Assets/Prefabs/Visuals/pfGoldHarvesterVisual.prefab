@@ -4786,7 +4786,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 382055491
+  m_SortingLayerID: 2004598429
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_RenderMode: 0
@@ -4822,6 +4822,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3402278562845663694}
   - component: {fileID: 1141679802845842686}
+  - component: {fileID: 8283939026081915917}
   m_Layer: 0
   m_Name: sprite
   m_TagString: Untagged
@@ -4893,6 +4894,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8283939026081915917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898527630791270806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2df91be42b43f974d9ae6e475efeebbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  runOnce: 1
+  positionOffsetY: -3
 --- !u!1 &2156701223262941850
 GameObject:
   m_ObjectHideFlags: 0
@@ -4958,6 +4973,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2923802135867205715}
   - component: {fileID: 1115498307588655127}
+  - component: {fileID: 7354616533543859142}
   m_Layer: 0
   m_Name: Pickaxe_2
   m_TagString: Untagged
@@ -5029,6 +5045,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7354616533543859142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4530789051544615550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2df91be42b43f974d9ae6e475efeebbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  runOnce: 1
+  positionOffsetY: -5
 --- !u!1 &4651083683912841605
 GameObject:
   m_ObjectHideFlags: 0
@@ -9815,7 +9845,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 382055491
+  m_SortingLayerID: 2004598429
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_RenderMode: 0
@@ -9851,6 +9881,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2370562390874571200}
   - component: {fileID: 7159977404740768245}
+  - component: {fileID: 399602011971174862}
   m_Layer: 0
   m_Name: Pickaxe
   m_TagString: Untagged
@@ -9922,3 +9953,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &399602011971174862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6516176909751793203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2df91be42b43f974d9ae6e475efeebbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  runOnce: 1
+  positionOffsetY: -5

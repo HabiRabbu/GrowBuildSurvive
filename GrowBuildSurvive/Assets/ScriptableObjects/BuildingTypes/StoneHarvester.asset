@@ -9,18 +9,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba868d79999c97e44b4bf87aca443d70, type: 3}
+  m_Script: {fileID: 11500000, guid: e87efacece31d4a48b8966ef9aa0afc8, type: 3}
   m_Name: StoneHarvester
   m_EditorClassIdentifier: 
   nameString: Stone Harvester
-  prefab: {fileID: 2259928892925930072, guid: 110d0f1278117464299698161013d538, type: 3}
+  prefab: {fileID: 453496587237905750, guid: c5209a0f497980a47ba86abfab9735b8, type: 3}
+  hasResourceGeneratorData: 1
   resourceGeneratorData:
     timerMax: 1
-    resourceType: {fileID: 11400000, guid: e06ba7e2f47256a4bbdbd0dd094da8d1, type: 2}
-    resourceDetectionRadius: 5
+    resourceType: {fileID: 11400000, guid: 917854db6780dd447846e3d2ab10ce35, type: 2}
+    resourceDetectionRadius: 7
     maxResourceAmount: 4
   sprite: {fileID: 21300000, guid: 2263e91ebcd2a254dab5f4caccb4a7af, type: 3}
-  minConstructionRadius: 7
+  minConstructionRadius: 10
   constructionResourceCostArray:
-  - resourceType: {fileID: 11400000, guid: 26bddb6b966004346907218edf8f5274, type: 2}
-    amount: 30
+  - resourceType: {fileID: 11400000, guid: 55700961c53eafa429d5be95f146e90f, type: 2}
+    amount: 80
+  healthAmountMax: 100
+  constructionTimerMax: 7
